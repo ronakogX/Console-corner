@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11120f">
+  <meta name="description" content="Console Corner — premium console gaming, racing simulator sessions, GamePasses and rewards. Book your next session.">
+  <title>Console Corner — Play Your Way</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <div class="announcement"><span class="live-dot"></span> YOUR NEXT GAME NIGHT STARTS HERE <span class="announcement-sep">•</span> <a href="#booking">Book a session <span aria-hidden="true">↗</span></a></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Console Corner home">
+      <span class="brand-mark"><span>CC</span><i></i></span>
+      <span class="brand-copy"><strong>CONSOLE<span> CORNER</span></strong><small>PLAY. CONNECT. REPEAT.</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#stations">The setup</a><a href="#passes">GamePasses</a><a href="#menu">Food & drinks</a><a href="#rewards">Rewards</a>
+      <button class="nav-login" id="open-login"><span class="user-icon">↗</span> Login</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> YOUR LOCAL GAMING SPOT</div>
+        <h1>GOOD GAMES.<br><span>GREAT COMPANY.</span></h1>
+        <p class="hero-lede">Big wins, close races, friendly rivalries. Pull up with your squad and make the next session count.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#booking">Book your session <span>↗</span></a><a class="text-link" href="#passes">Explore GamePasses <span>↓</span></a></div>
+        <div class="hero-proof"><div class="proof-avatars"><span>🎮</span><span>🏁</span><span>⚡</span></div><p><strong>Choose your game.</strong><br>Bring your people.</p></div>
+      </div>
+      <div class="hero-art" aria-label="Gaming controller illustration">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-glow"></div>
+        <div class="art-label label-top"><span class="label-icon">✳</span><span>READY<br><b>PLAYER ONE</b></span></div>
+        <div class="controller">
+          <div class="controller-top"></div><div class="controller-grip grip-left"></div><div class="controller-grip grip-right"></div>
+          <div class="dpad"><i></i><b></b></div><div class="stick stick-left"></div><div class="stick stick-right"></div>
+          <div class="controller-buttons"><i>△</i><b>○</b><em>×</em><strong>□</strong></div>
+          <div class="controller-center"></div>
+        </div>
+        <div class="art-label label-bottom"><span class="label-number">01</span><span>LEVEL UP<br><b>YOUR FREE TIME</b></span></div>
+        <span class="spark spark-one">✳</span><span class="spark spark-two">✦</span><span class="spark spark-three">✳</span>
+      </div>
+      <div class="hero-bottomline"><span>CONSOLES • RACING • GOOD VIBES</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <section class="ticker" aria-label="Gaming options"><div class="ticker-track"><span>PLAY TOGETHER</span><b>✳</b><span>RACE YOUR FRIENDS</span><b>✳</b><span>STAY FOR ONE MORE</span><b>✳</b><span>PLAY TOGETHER</span><b>✳</b><span>RACE YOUR FRIENDS</span><b>✳</b><span>STAY FOR ONE MORE</span><b>✳</b></div></section>
+
+    <section class="section-wrap section-pad" id="stations">
+      <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> PICK YOUR PLAYSTYLE</div><h2>WHAT ARE WE<br><span>PLAYING TODAY?</span></h2></div><p>From couch co-op to full-throttle racing, pick a setup and get straight into the fun.</p></div>
+      <div class="station-grid">
+        <article class="station-card station-ps5"><div class="station-top"><span class="station-tag">01 / CONSOLE</span><span class="station-symbol">◉</span></div><div class="station-visual ps5-visual"><div class="console-tower"><i></i><b></b></div><div class="visual-disc"></div><span class="visual-word">NEXT<br>LEVEL</span></div><div class="station-info"><div><h3>PlayStation 5</h3><p>Next-gen games. Bigger moments.</p></div><div class="price"><strong>₹200</strong><span>/ hour</span></div></div><button class="card-action book-station" data-station="PS5">Book PS5 <span>↗</span></button></article>
+        <article class="station-card station-racing"><div class="station-top"><span class="station-tag">02 / SIMULATOR</span><span class="station-symbol">↗</span></div><div class="station-visual racing-visual"><div class="race-wheel"><div class="wheel-center"></div><i></i><b></b></div><span class="race-speed">220<span>KM/H</span></span><div class="race-stripe"></div></div><div class="station-info"><div><h3>Racing Simulator</h3><p>Feel every turn. Chase the line.</p></div><div class="price"><strong>₹250</strong><span>/ hour</span></div></div><button class="card-action book-station" data-station="Racing Simulator">Book Racing <span>↗</span></button></article>
+        <article class="station-card station-ps4"><div class="station-top"><span class="station-tag">03 / CONSOLE</span><span class="station-symbol">✳</span></div><div class="station-visual ps4-visual"><div class="console-stack"><i></i><b></b></div><div class="ps4-ring"></div><span class="visual-word">CLASSIC<br>MODE</span></div><div class="station-info"><div><h3>PlayStation 4</h3><p>Favourite titles. Timeless fun.</p></div><div class="price"><strong>₹150</strong><span>/ hour</span></div></div><button class="card-action book-station" data-station="PS4">Book PS4 <span>↗</span></button></article>
+      </div>
+    </section>
+
+    <section class="pass-section" id="passes"><div class="section-wrap section-pad">
+      <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> MORE PLAY. BETTER VALUE.</div><h2>MEET YOUR<br><span>GAMEPASS.</span></h2></div><p>Got a longer session in mind? Lock in your time and stay in the game.</p></div>
+      <div class="pass-grid">
+        <article class="pass-card"><div class="pass-meta"><span>01 / STARTER</span><span class="pass-shape">◒</span></div><h3>Starter Pass</h3><p class="pass-hours">3 HOURS OF PLAY</p><div class="pass-price">₹570</div><div class="pass-rule"></div><ul><li>3 hours of gaming time</li><li>Great for a quick session</li><li>Console of your choice*</li></ul><button class="btn btn-outline book-pass" data-pass="Starter Pass">Choose Starter <span>↗</span></button></article>
+        <article class="pass-card pass-featured"><div class="popular-pill">PLAYER FAVOURITE ✳</div><div class="pass-meta"><span>02 / GAMER</span><span class="pass-shape">◉</span></div><h3>Gamer Pass</h3><p class="pass-hours">5 HOURS OF PLAY</p><div class="pass-price">₹930</div><div class="pass-rule"></div><ul><li>5 hours of gaming time</li><li>More time with your squad</li><li>Console of your choice*</li></ul><button class="btn btn-primary book-pass" data-pass="Gamer Pass">Choose Gamer <span>↗</span></button></article>
+        <article class="pass-card"><div class="pass-meta"><span>03 / ULTIMATE</span><span class="pass-shape">✳</span></div><h3>Ultimate Pass</h3><p class="pass-hours">10 HOURS OF PLAY</p><div class="pass-price">₹1,799</div><div class="pass-rule"></div><ul><li>10 hours of gaming time</li><li>For serious game days</li><li>Console of your choice*</li></ul><button class="btn btn-outline book-pass" data-pass="Ultimate Pass">Choose Ultimate <span>↗</span></button></article>
+        <article class="pass-card"><div class="pass-meta"><span>04 / LEGEND</span><span class="pass-shape">✦</span></div><h3>Legend Pass</h3><p class="pass-hours">15 HOURS OF PLAY</p><div class="pass-price">₹2,650</div><div class="pass-rule"></div><ul><li>15 hours of gaming time</li><li>For the all-day regular</li><li>Console of your choice*</li></ul><button class="btn btn-outline book-pass" data-pass="Legend Pass">Choose Legend <span>↗</span></button></article>
+      </div><p class="fine-print">*Console availability and pass usage terms are confirmed by Console Corner when booking.</p>
+    </div></section>
+
+    <section class="section-wrap section-pad booking-section" id="booking">
+      <div class="booking-intro"><div class="eyebrow"><span class="eyebrow-line"></span> SAVE YOUR SPOT</div><h2>YOUR SESSION.<br><span>YOUR CALL.</span></h2><p>Tell us what you're feeling. We'll open WhatsApp with your booking details ready to send.</p><div class="booking-note"><span>↗</span><div><strong>Quick & easy booking</strong><small>Requests are confirmed by our team on WhatsApp.</small></div></div></div>
+      <form class="booking-form" id="booking-form">
+        <div class="form-heading"><span>LET'S GET YOU PLAYING</span><span>01 — 04</span></div>
+        <label>Your name<input name="name" autocomplete="name" placeholder="Enter your name" required maxlength="70"></label>
+        <div class="form-row"><label>Choose your setup<select name="station" id="booking-station" required><option value="">Select setup</option><option value="PS5">PlayStation 5 — ₹200/hour</option><option value="PS4">PlayStation 4 — ₹150/hour</option><option value="Racing Simulator">Racing Simulator — ₹250/hour</option></select></label><label>Duration<select name="duration" id="booking-duration" required><option value="1">1 hour</option><option value="2">2 hours</option><option value="3">3 hours</option><option value="4">4 hours</option></select></label></div>
+        <label>Preferred date and time<input type="datetime-local" name="datetime" id="booking-datetime" required></label>
+        <label>Anything else? <span class="optional">(optional)</span><textarea name="notes" rows="2" placeholder="Game, squad size, special request…"></textarea></label>
+        <div class="booking-total"><span>Estimated session total</span><strong id="booking-total">₹200</strong></div>
+        <button class="btn btn-primary btn-full" type="submit">Continue on WhatsApp <span>↗</span></button><p class="form-legal">Submitting a request doesn't confirm a booking. We'll confirm availability with you.</p>
+      </form>
+    </section>
+
+    <section class="food-section" id="menu"><div class="section-wrap section-pad food-layout">
+      <div class="food-art"><div class="food-sun"></div><div class="snack-card"><span class="snack-label">FUEL UP</span><div class="snack-emoji">🥤</div><div class="snack-emoji snack-two">🍟</div><div class="snack-emoji snack-three">🍕</div><div class="snack-stamp">GG<br>WP</div></div><span class="food-caption">GOOD GAMES NEED GOOD SNACKS.</span></div>
+      <div class="food-copy"><div class="eyebrow"><span class="eyebrow-line"></span> THE MID-GAME MENU</div><h2>PAUSE THE GAME.<br><span>NOT THE VIBE.</span></h2><p>Need a quick recharge between rounds? Check out our food and drinks when you visit.</p><div class="menu-preview"><div><span class="menu-icon">🥤</span><span><strong>Cold drinks</strong><small>Chilled refreshment</small></span></div><div><span class="menu-icon">🍟</span><span><strong>Quick bites</strong><small>Easy snacks between games</small></span></div><div><span class="menu-icon">🍕</span><span><strong>More to munch</strong><small>Ask our team for today's menu</small></span></div></div><p class="fine-print">Menu items and prices may vary. Ask staff for the current menu.</p><a class="text-link" href="#rewards">Use points on food & drinks <span>↘</span></a></div>
+    </div></section>
+
+    <section class="section-wrap section-pad rewards-section" id="rewards"><div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> GOOD PLAY PAYS OFF</div><h2>YOUR POINTS.<br><span>YOUR PERKS.</span></h2></div><p>Get a redeem code from our team after a qualifying purchase. Sign in to redeem your code and use your points.</p></div>
+      <div class="reward-grid"><article class="reward-card reward-food"><div class="reward-icon">₹</div><div><span class="reward-kicker">FOOD & DRINKS</span><h3>Snack on us.</h3><p>Use your points toward eligible food and beverage purchases.</p><strong>1 point = ₹1</strong></div></article><article class="reward-card reward-time"><div class="reward-icon">◷</div><div><span class="reward-kicker">GAMING TIME</span><h3>Stay in the game.</h3><p>Turn your points into more time on your favourite setup.</p><strong>200 points = 60 minutes</strong></div></article></div>
+      <div class="redeem-strip"><div><span class="redeem-tag">HAVE A CODE?</span><h3>Make those points count.</h3><p>Sign in with your Indian phone number to redeem a code or check your balance.</p></div><button class="btn btn-primary" id="open-redeem">Redeem a code <span>↗</span></button></div>
+    </section>
+
+    <section class="closing-cta"><div class="section-wrap closing-inner"><span class="closing-star">✳</span><div><div class="eyebrow">THE NEXT ROUND IS YOURS</div><h2>SEE YOU AT<br><span>CONSOLE CORNER.</span></h2></div><a class="btn btn-dark" href="#booking">Book your session <span>↗</span></a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-top"><a class="brand" href="#home"><span class="brand-mark"><span>CC</span><i></i></span><span class="brand-copy"><strong>CONSOLE<span> CORNER</span></strong><small>PLAY. CONNECT. REPEAT.</small></span></a><p>Good games are better together.</p><a class="footer-whatsapp" href="https://wa.me/918878821377" target="_blank" rel="noopener">Chat on WhatsApp ↗</a></div><div class="footer-bottom"><span>© <span id="year"></span> Console Corner. All rights reserved.</span><span>MADE FOR THE LOVE OF PLAY <b>✳</b></span><a href="#home">BACK TO TOP ↑</a></div></footer>
+
+  <dialog class="modal" id="login-modal"><form method="dialog" class="modal-close-form"><button class="modal-close" aria-label="Close">×</button></form><div class="modal-mark">CC</div><span class="modal-kicker">WELCOME BACK, PLAYER</span><h2>Your corner awaits.</h2><p>Sign in with your Indian phone number to view your loyalty points and redeem codes.</p><div class="phone-input"><span>🇮🇳 +91</span><input id="phone-number" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="10-digit mobile number" maxlength="10"></div><div id="recaptcha-container"></div><button class="btn btn-primary btn-full" id="send-otp" type="button">Send OTP <span>↗</span></button><div class="otp-area hidden" id="otp-area"><label>6-digit OTP<input id="otp-code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="Enter verification code"></label><button class="btn btn-primary btn-full" id="verify-otp" type="button">Verify & sign in</button></div><p class="modal-message" id="login-message" role="status">Phone verification requires Firebase configuration. See README.md.</p><div class="account-panel hidden" id="account-panel"><div class="account-balance"><span>YOUR POINTS</span><strong id="points-balance">—</strong></div><p id="account-phone"></p><button class="btn btn-outline btn-full" id="account-redeem">Redeem a code</button><button class="btn btn-primary btn-full" id="account-rewards" type="button" style="margin-top:10px">Use my points ↗</button><button class="text-link" id="sign-out" type="button">Sign out</button></div><p class="modal-footnote">Your number is used to verify your account.</p></dialog>
+
+  <dialog class="modal modal-redeem" id="redeem-modal"><form method="dialog" class="modal-close-form"><button class="modal-close" aria-label="Close">×</button></form><div class="modal-mark">✳</div><span class="modal-kicker">REWARDS DESK</span><h2>Got a code?</h2><p>Sign in first, then enter the unique code provided by Console Corner staff.</p><label>Redeem code<input id="redeem-code" placeholder="e.g. CC-AB12CD" autocomplete="off" maxlength="40"></label><button class="btn btn-primary btn-full" id="submit-redeem" type="button">Redeem code <span>↗</span></button><p class="modal-message" id="redeem-message" role="status">Sign in to securely redeem your code.</p></dialog>
+
+  <dialog class="modal modal-redeem" id="reward-modal"><form method="dialog" class="modal-close-form"><button class="modal-close" aria-label="Close">×</button></form><div class="modal-mark">✳</div><span class="modal-kicker">SPEND YOUR POINTS</span><h2>Choose your reward.</h2><p id="reward-balance-copy">Use your available points.</p><div class="reward-choice"><button class="reward-option" data-reward="food"><span>🥤</span><strong>Food & drinks</strong><small>1 point = ₹1 off eligible items</small><b>Use at counter ↗</b></button><button class="reward-option" data-reward="gaming"><span>🎮</span><strong>Gaming time</strong><small>200 points = 60 minutes</small><b>Request gaming time ↗</b></button></div><p class="modal-message" id="reward-message">Rewards are finalized by staff at the venue.</p></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
